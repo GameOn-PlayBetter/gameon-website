@@ -2,11 +2,11 @@
 
 import React from "react";
 import { DefaultPageLayout } from '../components/layouts/DefaultPageLayout'
-import { Button } from "../../UI/components/Button";
+import { Button } from "../../../UI/components/Button";
 import { FeatherZap, FeatherMail, FeatherArrowUpRightFromCircle, FeatherArrowRight } from "@subframe/core";
-import { Avatar } from "../../UI/components/Avatar";
-import { Badge } from "../../UI/components/Badge";
-import { BoldFooter } from "../../UI/components/BoldFooter";
+import { Avatar } from "../../../UI/components/Avatar";
+import { Badge } from "../../../UI/components/Badge";
+import { BoldFooter } from "../../../UI/components/BoldFooter";
 
 function LandingPage() {
   return (

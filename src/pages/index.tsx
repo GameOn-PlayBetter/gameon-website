@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { Button } from "../components/Button";
-import { Badge } from "../components/Badge";
-import { Avatar } from "../components/Avatar";
-import { BoldFooter } from "../components/BoldFooter";
+import { Button } from "../components/layouts/Button";
+import { Badge } from "../components/layouts/Badge";
+import { Avatar } from "../components/layouts/Avatar";
+import { BoldFooter } from "../components/layouts/BoldFooter";
 import { DefaultPageLayout } from "../components/layouts/DefaultPageLayout";
-import { SocialLinks } from "../components/SocialLinks";
+import { SocialLinks } from "../components/layouts/SocialLinks";
 
 function LandingPage() {
   return (

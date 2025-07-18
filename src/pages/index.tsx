@@ -7,6 +7,8 @@ import { Avatar } from "../components/layouts/Avatar";
 import { BoldFooter } from "../components/layouts/BoldFooter";
 import { DefaultPageLayout } from "../components/layouts/DefaultPageLayout";
 import SocialLinks from "../components/layouts/SocialLinks";
+import { Icon } from "../components/layouts/Icon";
+
 
 function LandingPage() {
   return (

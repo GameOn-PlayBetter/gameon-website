@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import DefaultPageLayout from '../components/layouts/DefaultPageLayout'
+import { DefaultPageLayout } from '../components/layouts/DefaultPageLayout'
 import { Button } from "../../UI/components/Button";
 import { FeatherZap, FeatherMail, FeatherArrowUpRightFromCircle, FeatherArrowRight } from "@subframe/core";
 import { Avatar } from "../../UI/components/Avatar";

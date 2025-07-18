@@ -8,7 +8,7 @@ import { BoldFooter } from "../components/layouts/BoldFooter";
 import { DefaultPageLayout } from "../components/layouts/DefaultPageLayout";
 import SocialLinks from "../components/layouts/SocialLinks";
 import { Icon } from "../components/layouts/Icon";
-import { Mail, Zap, ArrowRightCircle, ArrowRight } from 'react-feather';
+import SubframeCore from "../components/layouts/SubframeCore";
 
 function LandingPage() {
   return (
@@ -26,8 +26,7 @@ function LandingPage() {
             <span className="w-full max-w-[576px] whitespace-pre-wrap font-['Afacad_Flux'] text-[20px] font-[500] leading-[28px] text-success-700 text-center mobile:font-['Afacad_Flux'] mobile:text-[20px] mobile:font-[500] mobile:leading-[28px] mobile:tracking-normal">
               {"Get tips, tricks, and tactics from real gamers. \nBecause sometimes, YouTube just isn't enough."}
             </span>
-            <Button variant="destructive-primary" size="large">
-              <Zap size={20} className="mr-2" />
+            <Button variant="destructive-primary" size="large" icon="FeatherZap">
               Join The Waitlist
             </Button>
           </div>
@@ -35,7 +34,10 @@ function LandingPage() {
         <div className="flex w-full flex-col items-center justify-center gap-6 px-6 py-12">
           <div className="flex w-full max-w-[448px] flex-col items-center gap-6 rounded-lg border border-solid border-neutral-border bg-default-background px-8 py-8 shadow-lg">
             <div className="flex w-full items-center gap-4">
-              <Mail className="text-success-600" size={32} />
+              <SubframeCore.Icon
+                className="font-['Afacad_Flux'] text-[32px] font-[400] leading-[32px] text-success-600"
+                name="FeatherMail"
+              />
               <span className="text-heading-1 font-heading-1 text-success-600">
                 JOIN THE WAITLIST
               </span>
@@ -125,8 +127,7 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <Button size="large">
-            <ArrowRightCircle size={20} className="mr-2" />
+          <Button size="large" icon="FeatherArrowRightCircle">
             All Games
           </Button>
         </div>
@@ -181,8 +182,7 @@ function LandingPage() {
                 {"Ready to share your knowledge?"}
               </span>
             </div>
-            <Button size="large">
-              <ArrowRight size={20} className="mr-2" />
+            <Button size="large" icon="FeatherArrowRight">
               Start Coaching
             </Button>
           </div>

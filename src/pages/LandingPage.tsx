@@ -1,24 +1,15 @@
-1) Run the following command to sync Subframe components:
-
-```bash
-npx @subframe/cli@latest sync --all
-```
-
-2) Create a new page using the following TSX code. If the page already exists, use it as reference to update the existing code but preserve existing business logic or functionality.
-
-```tsx
 "use client";
 
 import React from "react";
-import { DefaultPageLayout } from "@/ui@/ui/layouts/DefaultPageLayout";
-import { Button } from "@/ui@/ui/components/Button";
+import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
+import { Button } from "@/ui/components/Button";
 import { FeatherZap } from "@subframe/core";
 import { FeatherMail } from "@subframe/core";
 import { FeatherArrowUpRightFromCircle } from "@subframe/core";
-import { Avatar } from "@/ui@/ui/components/Avatar";
-import { Badge } from "@/ui@/ui/components/Badge";
+import { Avatar } from "@/ui/components/Avatar";
+import { Badge } from "@/ui/components/Badge";
 import { FeatherArrowRight } from "@subframe/core";
-import { BoldFooter } from "@/ui@/ui/components/BoldFooter";
+import { BoldFooter } from "@/ui/components/BoldFooter";
 
 function LandingPage() {
   return (
@@ -251,5 +242,3 @@ function LandingPage() {
 }
 
 export default LandingPage;
-
-```

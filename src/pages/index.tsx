@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
-import { Button } from "@/ui/components/Button";
+import { DefaultPageLayout } from "../../UI/layouts/DefaultPageLayout";
+import { Button } from "../../UI/components/Button";
 import { FeatherZap, FeatherMail, FeatherArrowUpRightFromCircle, FeatherCrown, FeatherTarget, FeatherArrowRight } from "@subframe/core";
-import { Avatar } from "@/ui/components/Avatar";
-import { Badge } from "@/ui/components/Badge";
-import { IconWithBackground } from "@/ui/components/IconWithBackground";
-import { BoldFooter } from "@/ui/components/BoldFooter";
+import { Avatar } from "../../UI/components/Avatar";
+import { Badge } from "../../UI/components/Badge";
+import { IconWithBackground } from "../../UI/components/IconWithBackground";
+import { BoldFooter } from "../../UI/components/BoldFooter";
 
 function LandingPage() {
   return (

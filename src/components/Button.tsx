@@ -1,8 +1,24 @@
 import React from "react";
-// Import the icon library you're using in Subframe
-import * as FeatherIcons from "react-feather"; // or your preferred icon library
+import * as FeatherIcons from "react-feather";
 
-export function Button({ children, icon, size = "default", variant = "default", className = "", ...props }) {
+type ButtonProps = {
+  children: React.ReactNode;
+  icon?: React.ReactNode | string;
+  size?: "default" | "large";
+  variant?: "default" | "destructive-primary" | "warning" | "success" | "brand-primary";
+  className?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  [key: string]: any;
+};
+
+export function Button({ 
+  children, 
+  icon, 
+  size = "default", 
+  variant = "default", 
+  className = "", 
+  ...props 
+}: ButtonProps) {
   const baseStyles = "inline-flex items-center justify-center font-bold rounded-lg transition-colors duration-200";
   const sizes = {
     default: "px-4 py-2 text-sm",
@@ -16,15 +32,29 @@ export function Button({ children, icon, size = "default", variant = "default", 
     "brand-primary": "bg-brand-600 text-white hover:bg-brand-700",
   };
   
-  // Handle icon rendering
-  const IconComponent = icon && (typeof icon === 'string' && FeatherIcons[icon.replace('Feather', '')]);
+  // Properly handle both string icons and React elements
+  const renderIcon = () => {
+    if (!icon) return null;
+    
+    if (typeof icon === 'string') {
+      const iconName = icon.replace('Feather', '');
+      const IconComponent = FeatherIcons[iconName];
+      return IconComponent ? <IconComponent size={size === "large" ? 20 : 16} className="mr-2" /> : null;
+    }
+    
+    // If icon is already a React element
+    return React.cloneElement(icon as React.ReactElement, { 
+      size: size === "large" ? 20 : 16,
+      className: "mr-2"
+    });
+  };
 
   return (
     <button
       className={`${baseStyles} ${sizes[size]} ${variants[variant] || ""} ${className}`}
       {...props}
     >
-      {IconComponent && <IconComponent size={size === "large" ? 20 : 16} className="mr-2" />}
+      {renderIcon()}
       {children}
     </button>
   );

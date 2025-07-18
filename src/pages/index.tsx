@@ -6,7 +6,7 @@ import { Badge } from "../components/layouts/Badge";
 import { Avatar } from "../components/layouts/Avatar";
 import { BoldFooter } from "../components/layouts/BoldFooter";
 import { DefaultPageLayout } from "../components/layouts/DefaultPageLayout";
-import { SocialLinks } from "../components/layouts/SocialLinks";
+import SocialLinks from "../components/layouts/SocialLinks";
 
 function LandingPage() {
   return (

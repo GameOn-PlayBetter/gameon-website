@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { DefaultPageLayout } from '../components/layouts/DefaultPageLayout'
-import { Button } from "../../UI/components/Button.tsx";
-import { FeatherZap, FeatherMail, FeatherArrowUpRightFromCircle, FeatherArrowRight } from "@subframe/core";
-import { Avatar } from "../../UI/components/Avatar.tsx";
-import { Badge } from "../../UI/components/Badge.tsx";
-import { BoldFooter } from "../../UI/components/BoldFooter.tsx";
+import { DefaultPageLayout } from '../components/layouts/DefaultPageLayout';
+import { Button } from "../UI/components/Button";
+import * as SubframeCore from "@subframe/core";
+import { Avatar } from "../UI/components/Avatar";
+import { Badge } from "../UI/components/Badge";
+import { BoldFooter } from "../UI/components/BoldFooter";
 
 function LandingPage() {
   return (
@@ -22,16 +22,9 @@ function LandingPage() {
               {"LEVEL UP YOUR GAME"}
             </span>
             <span className="w-full max-w-[576px] whitespace-pre-wrap font-['Afacad_Flux'] text-[20px] font-[500] leading-[28px] text-success-700 text-center mobile:font-['Afacad_Flux'] mobile:text-[20px] mobile:font-[500] mobile:leading-[28px] mobile:tracking-normal">
-              {
-                "Get tips, tricks, and tactics from real gamers. \nBecause sometimes, YouTube just isn't enough."
-              }
+              {"Get tips, tricks, and tactics from real gamers. \nBecause sometimes, YouTube just isn't enough."}
             </span>
-            <Button
-              variant="destructive-primary"
-              size="large"
-              icon={<FeatherZap />}
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-            >
+            <Button variant="destructive-primary" size="large" icon="FeatherZap">
               Join The Waitlist
             </Button>
           </div>
@@ -39,7 +32,10 @@ function LandingPage() {
         <div className="flex w-full flex-col items-center justify-center gap-6 px-6 py-12">
           <div className="flex w-full max-w-[448px] flex-col items-center gap-6 rounded-lg border border-solid border-neutral-border bg-default-background px-8 py-8 shadow-lg">
             <div className="flex w-full items-center gap-4">
-              <FeatherMail className="font-['Afacad_Flux'] text-[32px] font-[400] leading-[32px] text-success-600" />
+              <SubframeCore.Icon
+                className="font-['Afacad_Flux'] text-[32px] font-[400] leading-[32px] text-success-600"
+                name="FeatherMail"
+              />
               <span className="text-heading-1 font-heading-1 text-success-600">
                 JOIN THE WAITLIST
               </span>
@@ -48,12 +44,7 @@ function LandingPage() {
               GameOn is currently in pre-launch. Sign up below to reserve your
               spot when we go live and get free tokens!
             </span>
-            <Button
-              className="h-10 w-full flex-none"
-              variant="destructive-primary"
-              size="large"
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-            >
+            <Button className="h-10 w-full flex-none" variant="destructive-primary" size="large">
               SIGN UP NOW
             </Button>
           </div>
@@ -79,11 +70,7 @@ function LandingPage() {
                       setup guides and recommendations.
                     </span>
                   </div>
-                  <Button
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                  >
-                    Learn More
-                  </Button>
+                  <Button>Learn More</Button>
                 </div>
               </div>
               <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
@@ -101,11 +88,7 @@ function LandingPage() {
                       worldwide.
                     </span>
                   </div>
-                  <Button
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                  >
-                    Learn More
-                  </Button>
+                  <Button>Learn More</Button>
                 </div>
               </div>
               <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
@@ -123,11 +106,7 @@ function LandingPage() {
                       pro guidance.
                     </span>
                   </div>
-                  <Button
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                  >
-                    Learn More
-                  </Button>
+                  <Button>Learn More</Button>
                 </div>
               </div>
               <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
@@ -145,20 +124,12 @@ function LandingPage() {
                       personalized coaching.
                     </span>
                   </div>
-                  <Button
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                  >
-                    Learn More
-                  </Button>
+                  <Button>Learn More</Button>
                 </div>
               </div>
             </div>
           </div>
-          <Button
-            size="large"
-            icon={<FeatherArrowUpRightFromCircle />}
-            onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-          >
+          <Button size="large" icon="FeatherArrowUpRightFromCircle">
             All Games
           </Button>
         </div>
@@ -182,12 +153,7 @@ function LandingPage() {
                 <span className="text-body font-body text-brand-700 text-center">
                   Professional builder &amp; redstone specialist
                 </span>
-                <Button
-                  variant="destructive-primary"
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                >
-                  Book Session
-                </Button>
+                <Button variant="destructive-primary">Book Session</Button>
               </div>
               <div className="flex min-w-[288px] grow shrink-0 basis-0 flex-col items-center gap-6 rounded-[32px] bg-brand-50 px-8 py-12">
                 <Avatar
@@ -203,12 +169,7 @@ function LandingPage() {
                 <span className="text-body font-body text-warning-700 text-center">
                   Competitive survivor &amp; strategy expert
                 </span>
-                <Button
-                  variant="destructive-primary"
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                >
-                  Book Session
-                </Button>
+                <Button variant="destructive-primary">Book Session</Button>
               </div>
             </div>
           </div>
@@ -223,11 +184,7 @@ function LandingPage() {
                 {"Ready to share your knowledge?"}
               </span>
             </div>
-            <Button
-              size="large"
-              icon={<FeatherArrowRight />}
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-            >
+            <Button size="large" icon="FeatherArrowRight">
               Start Coaching
             </Button>
           </div>

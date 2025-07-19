@@ -1,256 +1,137 @@
-"use client";
-
 import React from "react";
-import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
-import { Button } from "@/ui/components/Button";
-import { FeatherZap } from "@subframe/core";
-import { FeatherArrowRight } from "@subframe/core";
-import { FeatherArrowRightCircle } from "@subframe/core";
-import { Avatar } from "@/ui/components/Avatar";
-import { Badge } from "@/ui/components/Badge";
-import { BoldFooter } from "@/ui/components/BoldFooter";
+import Image from "next/image";
+import Link from "next/link";
 
-function LandingPage() {
+export default function LandingPage() {
   return (
-    <DefaultPageLayout>
-      <div className="flex w-full flex-col items-center bg-black h-screen">
-        <div className="flex w-full grow shrink-0 basis-0 flex-col items-start bg-black">
-          <div className="flex w-full flex-col items-center justify-center gap-3 bg-black px-6 py-6">
-            <div className="flex w-full max-w-[1024px] flex-col items-center justify-center gap-3">
-              <img
-                className="h-96 w-full flex-none object-contain"
-                src="https://res.cloudinary.com/subframe/image/upload/v1752180871/uploads/19984/xz0wrne7nh62oxklt6fo.png"
-              />
-              <span className="w-full max-w-[768px] whitespace-pre-wrap font-['Orbitron'] text-[60px] font-[900] leading-[68px] text-default-font text-center -tracking-[0.04em] mobile:font-['Orbitron'] mobile:text-[48px] mobile:font-[400] mobile:leading-[44px] mobile:tracking-normal">
-                {"LEVEL UP YOUR GAME"}
-              </span>
-              <span className="w-full max-w-[576px] whitespace-pre-wrap font-['Afacad_Flux'] text-[20px] font-[500] leading-[28px] text-success-700 text-center mobile:font-['Afacad_Flux'] mobile:text-[20px] mobile:font-[500] mobile:leading-[28px] mobile:tracking-normal">
-                {
-                  "Get tips, tricks, and tactics from real gamers. \nBecause sometimes, YouTube just isn't enough."
-                }
-              </span>
-              <Button
-                variant="destructive-primary"
-                size="large"
-                icon={<FeatherZap />}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-              >
-                Join The Waitlist
-              </Button>
-            </div>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center gap-6 px-6 py-12">
-            <div className="flex w-full max-w-[448px] flex-col items-center gap-6 rounded-lg border border-solid border-neutral-border bg-default-background px-8 py-8 shadow-lg">
-              <div className="flex w-full items-center gap-4">
-                <span className="text-heading-1 font-heading-1 text-success-600">
-                  JOIN THE WAITLIST
-                </span>
-              </div>
-              <span className="text-body font-body text-neutral-700 text-center">
-                GameOn is currently in pre-launch. Sign up below to reserve your
-                spot when we go live and get free tokens!
-              </span>
-              <Button
-                className="h-10 w-full flex-none"
-                variant="destructive-primary"
-                size="large"
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-              >
-                SIGN UP NOW
-              </Button>
-            </div>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center gap-12 px-6 py-24">
-            <div className="flex w-full max-w-[1280px] flex-col items-start gap-8">
-              <span className="font-['Orbitron'] text-[36px] font-[700] leading-[40px] text-warning-700">
-                Featured Games
-              </span>
-              <div className="w-full items-start gap-8 grid grid-cols-2">
-                <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
-                  <img
-                    className="h-64 w-full flex-none object-cover"
-                    src="https://placehold.co/800x400/000000/FFFFFF.png?text=Minecraft"
-                  />
-                  <div className="flex w-full flex-col items-start gap-4 px-8 py-8">
-                    <div className="flex w-full flex-col items-start gap-2">
-                      <span className="font-['Orbitron'] text-[24px] font-[700] leading-[28px] text-default-font">
-                        Minecraft
-                      </span>
-                      <span className="text-body font-body text-subtext-color">
-                        Create the perfect gaming environment with our expert
-                        setup guides and recommendations.
-                      </span>
-                    </div>
-                    <Button
-                      icon={<FeatherArrowRight />}
-                      onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
-                      ) => {}}
-                    >
-                      Learn More
-                    </Button>
-                  </div>
-                </div>
-                <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
-                  <img
-                    className="h-64 w-full flex-none object-cover"
-                    src="https://placehold.co/800x400/000000/FFFFFF.png?text=Dead+By+Daylight"
-                  />
-                  <div className="flex w-full flex-col items-start gap-4 px-8 py-8">
-                    <div className="flex w-full flex-col items-start gap-2">
-                      <span className="font-['Orbitron'] text-[24px] font-[700] leading-[28px] text-default-font">
-                        Dead by Daylight
-                      </span>
-                      <span className="text-body font-body text-subtext-color">
-                        Join our gaming community events and compete with
-                        players worldwide.
-                      </span>
-                    </div>
-                    <Button
-                      icon={<FeatherArrowRight />}
-                      onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
-                      ) => {}}
-                    >
-                      Learn More
-                    </Button>
-                  </div>
-                </div>
-                <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
-                  <img
-                    className="h-64 w-full flex-none object-cover"
-                    src="https://placehold.co/800x400/000000/FFFFFF.png?text=League+of+Legends"
-                  />
-                  <div className="flex w-full flex-col items-start gap-4 px-8 py-8">
-                    <div className="flex w-full flex-col items-start gap-2">
-                      <span className="font-['Orbitron'] text-[24px] font-[700] leading-[28px] text-default-font">
-                        League of Legends
-                      </span>
-                      <span className="text-body font-body text-subtext-color">
-                        Master champion mechanics and climb the ranked ladder
-                        with pro guidance.
-                      </span>
-                    </div>
-                    <Button
-                      icon={<FeatherArrowRight />}
-                      onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
-                      ) => {}}
-                    >
-                      Learn More
-                    </Button>
-                  </div>
-                </div>
-                <div className="flex flex-col items-start overflow-hidden rounded-[32px] bg-brand-50 shadow-lg">
-                  <img
-                    className="h-64 w-full flex-none object-cover"
-                    src="https://placehold.co/800x400/000000/FFFFFF.png?text=Valorant"
-                  />
-                  <div className="flex w-full flex-col items-start gap-4 px-8 py-8">
-                    <div className="flex w-full flex-col items-start gap-2">
-                      <span className="font-['Orbitron'] text-[24px] font-[700] leading-[28px] text-default-font">
-                        Valorant
-                      </span>
-                      <span className="text-body font-body text-subtext-color">
-                        Improve your aim and tactical decision-making with
-                        personalized coaching.
-                      </span>
-                    </div>
-                    <Button
-                      icon={<FeatherArrowRight />}
-                      onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
-                      ) => {}}
-                    >
-                      Learn More
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <Button
-              size="large"
-              icon={<FeatherArrowRightCircle />}
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-            >
-              All Games
-            </Button>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center gap-12 px-6 py-24">
-            <div className="flex w-full max-w-[1280px] flex-col items-start gap-8">
-              <span className="font-['Orbitron'] text-[36px] font-[700] leading-[40px] text-success-700">
-                Featured Coaches
-              </span>
-              <div className="flex w-full flex-wrap items-start gap-8">
-                <div className="flex min-w-[288px] grow shrink-0 basis-0 flex-col items-center gap-6 rounded-[32px] bg-brand-50 px-8 py-12">
-                  <Avatar
-                    size="x-large"
-                    image="https://placehold.co/200x200/000000/FFFFFF.png?text=Coach+A"
-                  >
-                    A
-                  </Avatar>
-                  <span className="font-['Orbitron'] text-[24px] font-[700] leading-[28px] text-brand-700 text-center">
-                    Coach Alex
-                  </span>
-                  <Badge>Minecraft Expert</Badge>
-                  <span className="text-body font-body text-brand-700 text-center">
-                    Professional builder &amp; redstone specialist
-                  </span>
-                  <Button
-                    variant="destructive-primary"
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                  >
-                    Book Session
-                  </Button>
-                </div>
-                <div className="flex min-w-[288px] grow shrink-0 basis-0 flex-col items-center gap-6 rounded-[32px] bg-brand-50 px-8 py-12">
-                  <Avatar
-                    size="x-large"
-                    image="https://placehold.co/200x200/000000/FFFFFF.png?text=Coach+S"
-                  >
-                    S
-                  </Avatar>
-                  <span className="font-['Orbitron'] text-[24px] font-[700] leading-[28px] text-warning-700 text-center">
-                    Coach Sarah
-                  </span>
-                  <Badge variant="warning">DBD Pro</Badge>
-                  <span className="text-body font-body text-warning-700 text-center">
-                    Competitive survivor &amp; strategy expert
-                  </span>
-                  <Button
-                    variant="destructive-primary"
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                  >
-                    Book Session
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center gap-6 bg-default-background px-6 py-24">
-            <div className="flex w-full max-w-[1280px] flex-col items-center justify-center gap-8 rounded-[32px] bg-default-background px-6 pt-24 pb-16">
-              <div className="flex w-full flex-col items-center justify-center gap-2">
-                <span className="w-full max-w-[768px] whitespace-pre-wrap font-['Orbitron'] text-[48px] font-[900] leading-[52px] text-default-font text-center -tracking-[0.04em]">
-                  {"JOIN THE ELITE"}
-                </span>
-                <span className="w-full max-w-[768px] whitespace-pre-wrap font-['Afacad_Flux'] text-[20px] font-[500] leading-[28px] text-brand-800 text-center">
-                  {"Ready to share your knowledge?"}
-                </span>
-              </div>
-              <Button
-                size="large"
-                icon={<FeatherArrowRight />}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-              >
-                Start Coaching
-              </Button>
-            </div>
-          </div>
-          <BoldFooter />
+    <div className="flex w-full flex-col items-center bg-black min-h-screen">
+      {/* Header/Navigation */}
+      <header className="w-full flex justify-between items-center px-6 py-4 bg-black border-b border-neutral-200">
+        <div className="text-2xl font-bold text-white">GameOn</div>
+        <nav className="hidden md:flex gap-6">
+          <Link href="#" className="text-white hover:text-brand-700">Games</Link>
+          <Link href="#" className="text-white hover:text-brand-700">Coaches</Link>
+          <Link href="#" className="text-white hover:text-brand-700">About</Link>
+        </nav>
+        <button className="bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded">Sign In</button>
+      </header>
+
+      {/* Hero Section */}
+      <section className="flex w-full flex-col items-center justify-center gap-6 px-6 py-16 bg-black">
+        <h1 className="text-5xl md:text-6xl font-bold text-white text-center max-w-3xl">
+          LEVEL UP YOUR GAME
+        </h1>
+        <p className="text-xl text-success-700 text-center max-w-xl">
+          Get tips, tricks, and tactics from real gamers.
+          <br />
+          Because sometimes, YouTube just isn't enough.
+        </p>
+        <button className="bg-error-700 hover:bg-error-800 text-white px-8 py-3 rounded-md flex items-center gap-2 mt-4">
+          <span>Join The Waitlist</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+          </svg>
+        </button>
+      </section>
+
+      {/* Waitlist Section */}
+      <section className="flex w-full flex-col items-center justify-center px-6 py-12">
+        <div className="flex w-full max-w-md flex-col items-center gap-6 rounded-lg border border-neutral-300 bg-black px-8 py-8 shadow-lg">
+          <h2 className="text-2xl font-bold text-success-600">JOIN THE WAITLIST</h2>
+          <p className="text-neutral-700 text-center">
+            GameOn is currently in pre-launch. Sign up below to reserve your spot when we go live and get free tokens!
+          </p>
+          <button className="bg-error-700 hover:bg-error-800 text-white w-full py-3 rounded-md">
+            SIGN UP NOW
+          </button>
         </div>
-      </div>
-    </DefaultPageLayout>
+      </section>
+
+      {/* Featured Games */}
+      <section className="flex w-full flex-col items-center justify-center gap-12 px-6 py-24">
+        <div className="flex w-full max-w-7xl flex-col items-start gap-8">
+          <h2 className="text-3xl font-bold text-warning-700">Featured Games</h2>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Game Card 1 */}
+            <div className="flex flex-col items-start overflow-hidden rounded-3xl bg-brand-50 shadow-lg">
+              <div className="h-64 w-full bg-gray-800 flex items-center justify-center">
+                <span className="text-white text-2xl">Minecraft</span>
+              </div>
+              <div className="flex w-full flex-col items-start gap-4 px-8 py-8">
+                <div className="flex w-full flex-col items-start gap-2">
+                  <h3 className="text-2xl font-bold text-white">Minecraft</h3>
+                  <p className="text-gray-400">
+                    Create the perfect gaming environment with our expert setup guides and recommendations.
+                  </p>
+                </div>
+                <button className="flex items-center gap-2 text-brand-700 hover:text-brand-800">
+                  <span>Learn More</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            {/* Game Card 2 */}
+            <div className="flex flex-col items-start overflow-hidden rounded-3xl bg-brand-50 shadow-lg">
+              <div className="h-64 w-full bg-gray-800 flex items-center justify-center">
+                <span className="text-white text-2xl">Dead By Daylight</span>
+              </div>
+              <div className="flex w-full flex-col items-start gap-4 px-8 py-8">
+                <div className="flex w-full flex-col items-start gap-2">
+                  <h3 className="text-2xl font-bold text-white">Dead by Daylight</h3>
+                  <p className="text-gray-400">
+                    Join our gaming community events and compete with players worldwide.
+                  </p>
+                </div>
+                <button className="flex items-center gap-2 text-brand-700 hover:text-brand-800">
+                  <span>Learn More</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button className="flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-6 py-3 rounded-md">
+          <span>All Games</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 16 16 12 12 8"></polyline>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+          </svg>
+        </button>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full bg-black border-t border-neutral-800 px-6 py-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-bold text-white">GameOn</h3>
+            <p className="text-gray-400">Level up your gaming experience</p>
+          </div>
+          <div className="flex gap-12">
+            <div className="flex flex-col gap-2">
+              <h4 className="text-white font-bold mb-2">Links</h4>
+              <Link href="#" className="text-gray-400 hover:text-white">Home</Link>
+              <Link href="#" className="text-gray-400 hover:text-white">Games</Link>
+              <Link href="#" className="text-gray-400 hover:text-white">Coaches</Link>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h4 className="text-white font-bold mb-2">Legal</h4>
+              <Link href="#" className="text-gray-400 hover:text-white">Privacy</Link>
+              <Link href="#" className="text-gray-400 hover:text-white">Terms</Link>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-neutral-800 text-center text-gray-500">
+          © {new Date().getFullYear()} GameOn. All rights reserved.
+        </div>
+      </footer>
+    </div>
   );
 }
-
-export default LandingPage;

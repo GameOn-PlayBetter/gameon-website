@@ -32,7 +32,7 @@ function LandingPage() {
               <Button
                 variant="destructive-primary"
                 size="large"
-                icon={<FeatherZap />}
+                icon={FeatherZap}
                 onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
               >
                 Join The Waitlist

@@ -2,7 +2,7 @@ import React from "react";
 
 type ButtonProps = {
   children: React.ReactNode;
-  icon?: React.ReactNode; // accepts JSX like <FeatherZap />
+  icon?: React.ReactNode; // accepts JSX now
   size?: "default" | "large";
   variant?: "default" | "destructive-primary" | "warning" | "success";
   className?: string;

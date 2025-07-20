@@ -1,15 +1,17 @@
 "use client";
 
 import React from "react";
-import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
 import { Button } from "@/ui/components/Button";
 import { Avatar } from "@/ui/components/Avatar";
 import { Badge } from "@/ui/components/Badge";
+import { BoldFooter } from "@/ui/components/BoldFooter";
+import { GameOnHeader } from "@/ui/components/GameOnHeader";
 import { FeatherZap, FeatherArrowRight, FeatherArrowRightCircle } from "@subframe/core";
 
 export default function LandingPage() {
   return (
-    <DefaultPageLayout>
+    <>
+      <GameOnHeader />
       <div className="flex w-full flex-col items-center bg-black">
         {/* HERO */}
         <div className="flex w-full flex-col items-center justify-center gap-3 px-6 py-6">
@@ -96,7 +98,7 @@ export default function LandingPage() {
         <div className="flex w-full flex-col items-center gap-12 px-6 py-24">
           <div className="w-full max-w-[1280px]">
             <h3 className="font-['Orbitron'] text-[36px] font-[700] text-[#00CFFF] mb-8">Featured Coaches</h3>
-           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 ["Coach Alex", "Minecraft Expert", "Professional builder & redstone specialist", "text-[#FF00C8]", "Coach+A"],
                 ["Coach Sarah", "DBD Pro", "Competitive survivor & strategy expert", "text-[#FFA500]", "Coach+S"],
@@ -140,6 +142,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-    </DefaultPageLayout>
+      <BoldFooter />
+    </>
   );
 }

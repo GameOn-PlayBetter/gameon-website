@@ -1,6 +1,6 @@
-// src/app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
+import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
 
 export const metadata: Metadata = {
   title: "GameOn",
@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <DefaultPageLayout>{children}</DefaultPageLayout>
+      </body>
     </html>
   );
 }

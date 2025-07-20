@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { SocialLinks } from "@/ui/components/SocialLinks";
+import SocialLinks from "@/ui/components/SocialLinks";
 
 export const BoldFooter = () => {
   return (

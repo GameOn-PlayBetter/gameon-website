@@ -96,7 +96,7 @@ export default function LandingPage() {
         <div className="flex w-full flex-col items-center gap-12 px-6 py-24">
           <div className="w-full max-w-[1280px]">
             <h3 className="font-['Orbitron'] text-[36px] font-[700] text-[#00CFFF] mb-8">Featured Coaches</h3>
-            <div className="flex flex-wrap gap-8 justify-center">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 ["Coach Alex", "Minecraft Expert", "Professional builder & redstone specialist", "text-[#FF00C8]", "Coach+A"],
                 ["Coach Sarah", "DBD Pro", "Competitive survivor & strategy expert", "text-[#FFA500]", "Coach+S"],

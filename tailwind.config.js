@@ -27,7 +27,9 @@ module.exports = {
         // your font sizes
       },
       fontFamily: {
-        // your font families
+        orbitron: ["'Orbitron'", "sans-serif"],
+        afacad: ["'Afacad Flux'", "sans-serif"], // optional if you're using it elsewhere
+      },
       },
       boxShadow: {
         // your shadows

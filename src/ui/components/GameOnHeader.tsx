@@ -7,8 +7,8 @@ export const GameOnHeader = () => {
   return (
     <header className="w-full bg-black px-6 py-4 flex justify-between items-center border-b border-pink-500">
       <Link href="/" className="flex items-center gap-2">
-        <img src="/GameOn_SNT.svg" alt="GameOn Logo" className="h-10 w-10" />
-        <span className="text-pink-500 font-['Orbitron'] text-xl font-bold tracking-wider">GameOn</span>
+       <img src="/GameOn_SNT.svg" alt="GameOn Logo" className="h-10 w-10" />
+        <span className="text-pink-500 font-orbitron text-xl font-bold tracking-wider">GameOn</span>
       </Link>
       <nav className="flex gap-6 text-white text-sm font-medium">
         <Link href="#games" className="hover:text-pink-500">Games</Link>

@@ -142,7 +142,6 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <BoldFooter />
     </>
   );
 }

@@ -31,7 +31,7 @@ function LandingPage() {
             <Button
               variant="destructive-primary"
               size="large"
-              icon={<FeatherZap />}
+              icon={FeatherZap}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
             >
               Join The Waitlist
@@ -81,7 +81,7 @@ function LandingPage() {
                     </span>
                   </div>
                   <Button
-                    icon={<FeatherArrowRight />}
+                    icon={FeatherArrowRight}
                     onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
                   >
                     Learn More
@@ -104,7 +104,7 @@ function LandingPage() {
                     </span>
                   </div>
                   <Button
-                    icon={<FeatherArrowRight />}
+                    icon={FeatherArrowRight}
                     onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
                   >
                     Learn More
@@ -127,7 +127,7 @@ function LandingPage() {
                     </span>
                   </div>
                   <Button
-                    icon={<FeatherArrowRight />}
+                    icon={FeatherArrowRight}
                     onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
                   >
                     Learn More
@@ -150,7 +150,7 @@ function LandingPage() {
                     </span>
                   </div>
                   <Button
-                    icon={<FeatherArrowRight />}
+                    icon={FeatherArrowRight}
                     onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
                   >
                     Learn More
@@ -161,7 +161,7 @@ function LandingPage() {
           </div>
           <Button
             size="large"
-            icon={<FeatherArrowRightCircle />}
+            icon={FeatherArrowRightCircle}
             onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
           >
             All Games
@@ -230,7 +230,7 @@ function LandingPage() {
             </div>
             <Button
               size="large"
-              icon={<FeatherArrowRight />}
+              icon={FeatherArrowRight}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
             >
               Start Coaching

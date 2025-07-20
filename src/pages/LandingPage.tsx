@@ -170,7 +170,7 @@ function LandingPage() {
             </div>
             <Button
               size="large"
-              icon={<FeatherArrowRightCircle />}
+              icon={FeatherArrowRightCircle}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
             >
               All Games

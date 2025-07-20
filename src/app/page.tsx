@@ -6,7 +6,7 @@ import { FeatherZap, FeatherArrowRight, FeatherArrowRightCircle } from "@subfram
 import { Avatar } from "@/ui/components/Avatar";
 import { Badge } from "@/ui/components/Badge";
 import { BoldFooter } from "@/ui/components/BoldFooter";
-import { DefaultPageLayout } from "@/ui/components/DefaultPageLayout";
+import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
 
 export default function LandingPage() {
   return (

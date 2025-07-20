@@ -12,7 +12,8 @@
     "@subframe/core": "latest",
     "next": "^13.5.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "@subframe/cli": "^1.189.0",

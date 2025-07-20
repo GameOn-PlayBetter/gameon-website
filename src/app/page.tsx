@@ -6,7 +6,11 @@ import { Button } from "@/ui/components/Button";
 import { Avatar } from "@/ui/components/Avatar";
 import { Badge } from "@/ui/components/Badge";
 import { BoldFooter } from "@/ui/components/BoldFooter";
-import { FeatherZap, FeatherArrowRight, FeatherArrowRightCircle } from "@subframe/core";
+import {
+  FeatherZap,
+  FeatherArrowRight,
+  FeatherArrowRightCircle,
+} from "@subframe/core";
 
 export default function LandingPage() {
   return (
@@ -60,13 +64,13 @@ export default function LandingPage() {
                   <div className="p-8">
                     <h4 className="font-['Orbitron'] text-[24px] font-[700] text-default-font">{title}</h4>
                     <p className="text-body text-subtext-color mb-4">{desc}</p>
-                    <Button icon={FeatherArrowRight}>Learn More</Button>
+                    <Button icon={<FeatherArrowRight />}>Learn More</Button>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <Button size="large" icon={FeatherArrowRightCircle}>
+          <Button size="large" icon={<FeatherArrowRightCircle />}>
             All Games
           </Button>
         </div>
@@ -98,7 +102,7 @@ export default function LandingPage() {
           <div className="w-full max-w-[1280px] rounded-[32px] bg-default-background px-6 pt-24 pb-16 text-center">
             <h2 className="font-['Orbitron'] text-[48px] font-[900] text-default-font -tracking-[0.04em]">JOIN THE ELITE</h2>
             <p className="font-['Afacad_Flux'] text-[20px] font-[500] text-brand-800 mt-4">Ready to share your knowledge?</p>
-            <Button size="large" icon={FeatherArrowRight} className="mt-6">
+            <Button size="large" icon={<FeatherArrowRight />} className="mt-6">
               Start Coaching
             </Button>
           </div>

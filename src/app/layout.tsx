@@ -1,10 +1,10 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
+import './globals.css';
+import type { Metadata } from 'next';
+import { DefaultPageLayout } from '@/ui/layouts/DefaultPageLayout';
 
 export const metadata: Metadata = {
-  title: "GameOn",
-  description: "Level up your game with expert coaching",
+  title: 'GameOn',
+  description: 'Level up your game with expert coaching',
 };
 
 export default function RootLayout({

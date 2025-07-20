@@ -2,16 +2,16 @@ import React from "react";
 
 type ButtonProps = {
   children: React.ReactNode;
-  icon?: React.ElementType; // icon is now optional
+  icon?: React.ReactNode; // now correctly expects JSX, not a component
   size?: "default" | "large";
   variant?: "default" | "destructive-primary" | "warning" | "success";
   className?: string;
-  [key: string]: any; // allow other button props like onClick
+  [key: string]: any;
 };
 
 export function Button({
   children,
-  icon: Icon,
+  icon,
   size = "default",
   variant = "default",
   className = "",
@@ -35,11 +35,7 @@ export function Button({
       className={`${baseStyles} ${sizes[size]} ${variants[variant] || ""} ${className}`}
       {...props}
     >
-      {Icon && (
-        <span className="mr-2">
-          <Icon />
-        </span>
-      )}
+      {icon && <span className="mr-2">{icon}</span>}
       {children}
     </button>
   );

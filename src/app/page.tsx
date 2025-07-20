@@ -6,10 +6,11 @@ import { FeatherZap, FeatherArrowRight, FeatherArrowRightCircle } from "@subfram
 import { Avatar } from "@/ui/components/Avatar";
 import { Badge } from "@/ui/components/Badge";
 import { BoldFooter } from "@/ui/components/BoldFooter";
+import { DefaultPageLayout } from "@/ui/layouts/DefaultPageLayout";
 
 export default function LandingPage() {
   return (
-    <div className="flex w-full flex-col items-center bg-black h-screen">
+    <DefaultPageLayout>
       <div className="flex w-full grow shrink-0 basis-0 flex-col items-start bg-black">
         <div className="flex w-full flex-col items-center justify-center gap-3 bg-black px-6 py-6">
           <div className="flex w-full max-w-[1024px] flex-col items-center justify-center gap-3">
@@ -115,6 +116,6 @@ export default function LandingPage() {
 
         <BoldFooter />
       </div>
-    </div>
+    </DefaultPageLayout>
   );
 }

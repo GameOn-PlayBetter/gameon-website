@@ -82,7 +82,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <Button
-                      icon={<FeatherArrowRight />}
+                      icon={FeatherArrowRight}
                       onClick={(
                         event: React.MouseEvent<HTMLButtonElement>
                       ) => {}}
@@ -107,7 +107,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <Button
-                      icon={<FeatherArrowRight />}
+                      icon={FeatherArrowRight}
                       onClick={(
                         event: React.MouseEvent<HTMLButtonElement>
                       ) => {}}
@@ -132,7 +132,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <Button
-                      icon={<FeatherArrowRight />}
+                      icon={FeatherArrowRight}
                       onClick={(
                         event: React.MouseEvent<HTMLButtonElement>
                       ) => {}}
@@ -157,7 +157,7 @@ function LandingPage() {
                       </span>
                     </div>
                     <Button
-                      icon={<FeatherArrowRight />}
+                      icon={FeatherArrowRight}
                       onClick={(
                         event: React.MouseEvent<HTMLButtonElement>
                       ) => {}}
@@ -239,7 +239,7 @@ function LandingPage() {
               </div>
               <Button
                 size="large"
-                icon={<FeatherArrowRight />}
+                icon={FeatherArrowRight}
                 onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
               >
                 Start Coaching

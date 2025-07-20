@@ -25,7 +25,7 @@ export default function LandingPage() {
             <span className="font-['Afacad_Flux'] text-[20px] font-[500] text-success-700 text-center">
               Get tips, tricks, and tactics from real gamers.{"\n"}Because sometimes, YouTube just isn't enough.
             </span>
-            <Button variant="destructive-primary" size="large" icon={FeatherZap}>
+            <Button variant="destructive-primary" size="large" icon={<FeatherZap />}>
               Join The Waitlist
             </Button>
           </div>

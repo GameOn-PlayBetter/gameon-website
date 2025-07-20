@@ -1,14 +1,24 @@
 import React from "react";
 
-export function Button({ 
-  children, 
-  icon: Icon, // Rename to Icon to use as a component
-  size = "default", 
-  variant = "default", 
-  className = "", 
-  ...props 
-}) {
-  const baseStyles = "inline-flex items-center justify-center font-bold rounded-lg transition-colors duration-200";
+type ButtonProps = {
+  children: React.ReactNode;
+  icon?: React.ElementType; // icon is now optional
+  size?: "default" | "large";
+  variant?: "default" | "destructive-primary" | "warning" | "success";
+  className?: string;
+  [key: string]: any; // allow other button props like onClick
+};
+
+export function Button({
+  children,
+  icon: Icon,
+  size = "default",
+  variant = "default",
+  className = "",
+  ...props
+}: ButtonProps) {
+  const baseStyles =
+    "inline-flex items-center justify-center font-bold rounded-lg transition-colors duration-200";
   const sizes = {
     default: "px-4 py-2 text-sm",
     large: "px-6 py-3 text-base",
@@ -25,7 +35,11 @@ export function Button({
       className={`${baseStyles} ${sizes[size]} ${variants[variant] || ""} ${className}`}
       {...props}
     >
-      {Icon && <span className="mr-2"><Icon /></span>}
+      {Icon && (
+        <span className="mr-2">
+          <Icon />
+        </span>
+      )}
       {children}
     </button>
   );

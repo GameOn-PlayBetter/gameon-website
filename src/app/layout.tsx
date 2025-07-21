@@ -1,4 +1,4 @@
-import '@/styles/app.css'; // ✅ Tailwind entry point
+import '@/styles/styles.css';
 import type { Metadata } from 'next';
 import { DefaultPageLayout } from '@/ui/layouts/DefaultPageLayout';
 

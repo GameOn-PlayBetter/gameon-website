@@ -19,12 +19,33 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <style>{`
-          html, body {
-            background-color: black;
-            color: white;
-            font-family: 'Orbitron', sans-serif;
+          * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+          }
+
+          html, body {
+            background-color: #0A0A0A;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+          }
+
+          a {
+            color: #00CFFF;
+            text-decoration: none;
+          }
+
+          button {
+            font-family: inherit;
+          }
+
+          img {
+            display: block;
+            max-width: 100%;
           }
         `}</style>
       </head>

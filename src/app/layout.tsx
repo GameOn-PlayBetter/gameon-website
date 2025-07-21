@@ -1,4 +1,3 @@
-import './globals.css';
 import type { Metadata } from 'next';
 import { DefaultPageLayout } from '@/ui/layouts/DefaultPageLayout';
 
@@ -19,6 +18,15 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap"
           rel="stylesheet"
         />
+        <style>{`
+          html, body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+        `}</style>
       </head>
       <body>
         <DefaultPageLayout>{children}</DefaultPageLayout>

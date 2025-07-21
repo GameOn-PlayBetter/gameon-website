@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #0A0A0A;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: #00CFFF;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}/* 🕹️ force UTF-8 */

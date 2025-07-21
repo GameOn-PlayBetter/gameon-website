@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global styles */
 html,
 body {
   background-color: #0A0A0A;
@@ -21,4 +22,4 @@ img {
 
 button {
   font-family: inherit;
-}/* 🕹️ force UTF-8 */
+}
